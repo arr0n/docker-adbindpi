@@ -1,0 +1,14 @@
+$TTL    86400   ; one day
+
+@       IN      SOA     nds.example.com. hostmaster.example.com. (
+            2002061000       ; serial number YYMMDDNN
+            28800   ; refresh  8 hours
+            7200    ; retry    2 hours
+            864000  ; expire  10 days
+            86400 ) ; min ttl  1 day
+        NS      nds.example.com
+
+        A       172.17.42.1
+
+@               IN      A       172.17.42.1
+*               IN      A       172.17.42.1
